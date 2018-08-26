@@ -26,7 +26,7 @@ public class UserController {
 	@PostMapping("/person/save")
 	public User save(User user) {
 		if(userRepository.save(user)) {
-			System.out.printf("用户对象：% 保存成功！\n",user);
+			System.out.printf("用户对象：%S 保存成功！\n",user);
 		}
 		return user;
 	}
